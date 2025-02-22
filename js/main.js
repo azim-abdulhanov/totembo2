@@ -244,8 +244,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		elements.selectLang.value = lang
 
 		document.querySelectorAll('[data-lang]').forEach(el => {
-			const key = el.dataset.lang // data-lang atributidan kalitni olish
-			const translation = languageArr[key] // To'g'ridan-to'g'ri key bo‘yicha izlash
+			const key = el.dataset.lang
+			const translation = languageArr[key]
 					
 			if (translation?.[lang]) {
 				el.textContent = translation[lang]
